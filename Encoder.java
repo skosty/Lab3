@@ -1,11 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
-
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,15 +16,8 @@ import java.util.Map;
 import java.util.Random;
 import java.util.StringTokenizer;
 
-/**
- *
- */
 public class Encoder {
 
-  
-  /**
-   * @param args the command line arguments
-   */
   public static void main(String[] args) throws IOException{
     System.setOut(new PrintStream(new File("log")));
     File freqFile = new File(args[0]);
@@ -193,10 +178,10 @@ return testFile;
 
 public static double round(double num, int digit){
 		
-			double xpon = Math.pow(10, (double) digit);
-			return Math.round(xpon*num)/xpon; 
+	double xpon = Math.pow(10, (double) digit);
+	return Math.round(xpon*num)/xpon; 
 		
-		}
+}
 
 
 
@@ -240,15 +225,11 @@ public static double[] dlmread(File file, String dlm){
 
 public static double[] arrayDivide(double[] a, double b){
 
-		double[] c = new double[a.length];
-		for(int i = 0; i < a.length; i++){
-			c[i] = a[i]/b; 
-		}
-		return c; 
-	} 
-
-
-
-
+	double[] c = new double[a.length];
+	for(int i = 0; i < a.length; i++){
+		c[i] = a[i]/b; 
+	}
+	return c; 
+} 
 
 }
